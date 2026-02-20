@@ -8,6 +8,10 @@ A Strands agent (Claude on Bedrock) runs an iterative enhancement loop — it ex
 
 ![Agentic Image Enhancement Architecture](images/agentic-image-enhancement.png)
 
+## Sample Output
+
+![Before and After Enhancement](images/agentic-image-enhancement-example.png)
+
 ## Quick Start
 
 ### 1. Install uv
@@ -44,7 +48,7 @@ Edit `.env`:
 
 ```
 AWS_PROFILE=your-profile-name   # Optional — omit if using SSO, federated, or exported creds
-AWS_REGION=your-region           # Optional — defaults to us-east-1
+AWS_REGION=your-region           # Optional — resolved from your AWS profile if not set
 ```
 
 Credentials are resolved through the standard AWS credential chain (SSO, environment variables, `~/.aws/credentials`, instance roles, etc.). If `AWS_PROFILE` is set, it will be passed to the boto3 session; otherwise boto3 picks up whatever credentials are active in your environment.

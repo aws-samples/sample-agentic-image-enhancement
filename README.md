@@ -4,13 +4,13 @@ Vision LLM-driven document image enhancement powered by [Strands Agents](https:/
 
 A Strands agent (Claude on Bedrock) runs an iterative enhancement loop — it examines a document image, prescribes targeted operations, executes them via tools, compares the result against the original, and decides whether to refine further or finish. Python-based tools (OpenCV, Pillow) do the actual pixel manipulation.
 
-## Architecture
-
-![Agentic Image Enhancement Architecture](images/agentic-image-enhancement.png)
-
 ## Sample Output
 
 ![Before and After Enhancement](images/agentic-image-enhancement-example.png)
+
+## Architecture
+
+![Agentic Image Enhancement Architecture](images/agentic-image-enhancement.png)
 
 ## Quick Start
 
